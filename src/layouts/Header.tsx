@@ -7,10 +7,10 @@ interface IProps {
 const Header = (Props: IProps) => {
   const { onUpdateSideOpen } = Props;
 
-  const mobileSidebarToggle = (e: React.MouseEvent) => {
-    e.preventDefault();
-    console.log(e.target);
-  }
+  // const mobileSidebarToggle = (e: React.MouseEvent) => {
+  //   e.preventDefault();
+  //   console.log(e.target);
+  // }
 
   return (
     <div className="main-navbar">
