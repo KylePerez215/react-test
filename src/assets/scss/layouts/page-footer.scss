@@ -1,0 +1,31 @@
+.page-footer {
+  background: #141416;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+  padding: 44px;
+  height: 120px;
+}
+
+.page-footer .logo {
+  height: 35px;
+  margin-left: 100px;
+}
+
+.page-footer .page-contact .contact {
+  margin-left: 15px;
+}
+
+.page-footer .page-socials {
+  margin-right: 150px;
+}
+
+.page-footer .page-socials .socials {
+  margin-left: 15px;
+}
+
+.page-footer .page-socials .socials img {
+  width: auto;
+  height: 30px;
+  margin: 5px;
+}

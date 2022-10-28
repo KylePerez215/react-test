@@ -1,0 +1,118 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: $sidebar-width;
+  display: block;
+  z-index: 1;
+  color: #fff;
+  font-weight: 200;
+  background-color: black;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (max-width: 991px) {
+
+  .sidebar {
+    right: -$sidebar-width;
+    left: auto;
+    position: absolute;
+    // @include transform-translate-3d(262px);
+    // @include transition (0.5s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+  }
+
+  .main-panel {
+    background: rgba(0, 0, 0, 0.15);
+    position: relative;
+    float: left;
+    width: 100%;
+    // @include transform-translate-3d(0px);
+    // @include transition (0.5s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+  }
+}
+
+.sidebar-open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -$sidebar-width;
+  width: $sidebar-width;
+  display: block;
+  z-index: 1;
+  color: #fff;
+  font-weight: 200;
+  background-color: gray;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-panel {
+  background: rgba(0, 0, 0, 0.15);
+  position: relative;
+  float: right;
+  width: calc(100% - $sidebar-width);
+}
+
+.content {
+  background-color: green;
+  padding: 30px 15px;
+  min-height: calc(100vh - $header-height - $footer-height);
+}
+
+.main-navbar {
+  user-select: none;
+  min-height: $header-height;
+  background-color: red;
+  display: flex;
+  align-items: center;
+}
+
+.main-footer {
+  min-height: $footer-height;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.page-header {
+  height: 95px;
+  position: fixed;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.page-header .logo {
+  width: 272px;
+  height: 39px;
+  margin-left: 50px;
+}
+
+.page-header .page-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-nav {
+
+  .menu {
+    padding: 20px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    list-style: none;
+
+    &:hover {
+      font-weight: 600;
+      color: #03B8B3;
+    }
+  }
+
+}
